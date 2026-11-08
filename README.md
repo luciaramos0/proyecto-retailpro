@@ -17,6 +17,7 @@ El brief completo (KPIs, preguntas de análisis y boceto del dashboard) está en
 | Power Query / lenguaje M | Limpieza y transformación (ETL) |
 | DAX | Medidas del modelo (Total Ventas, YTD, año anterior, crecimiento) |
 | Canva | Boceto del dashboard |
+| draw.io| Esquema estrella del modelo de datos |
 
 ## Modelo de datos (esquema en estrella)
 
