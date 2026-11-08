@@ -38,12 +38,11 @@ El diagrama ER y la justificación de normalización están en el PDF de la pre-
 RetailPro/
 ├── README.md
 ├── sql/
-│   ├── [script de creación del esquema en estrella]
+│   ├── ventas_tech_db.sql
 │   ├── m4_consultas_negocio.sql
 │   └── m5_consultas_joins.sql
 ├── powerbi/
 │   ├── Pipeline_ETL_Ramos_Lucia.pbix
-│   └── Ramos_Lucia_Checkpoint2.pbix
 └── docs/
     └── PDFs de las pre-entregas
 ```
@@ -52,7 +51,7 @@ RetailPro/
 
 **Requisitos:** SQL Server y un cliente para ejecutar scripts (por ejemplo, SQL Server Management Studio).
 
-1. Crear la base de datos `ventas_tech_db` y las siete tablas del esquema en estrella (script de creación del esquema).
+1. Crear la base de datos `ventas_tech_db` y las siete tablas del esquema en estrella.
 2. Cargar los datos de ejemplo en las tablas.
 3. Ejecutar `m4_consultas_negocio.sql`: resumen mensual, ranking de productos, clientes recurrentes y comparación contra el promedio.
 4. Ejecutar `m5_consultas_joins.sql`: vista base (INNER JOIN), clientes y productos sin ventas (LEFT JOIN) y consolidado por canal (UNION ALL).
@@ -79,7 +78,7 @@ Top 5 de productos por facturación:
 
 ## Modelo analítico en Power BI
 
-El archivo `Ramos_Lucia_Checkpoint2.pbix` contiene:
+El archivo `Pipeline_ETL_Ramos_Lucia.pbix` contiene:
 
 - Relaciones 1:N con filtro en dirección única (dimensión → hechos).
 - Tabla calendario `Dim_Fechas`, marcada como tabla de fechas.
